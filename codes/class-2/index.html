@@ -1,0 +1,149 @@
+
+<!-- etiquetas semanticas, formularios y sus etiquetas -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <img src="https://placeholder.com/60" alt=""> 
+        <nav>
+            <ul>
+                <li> <a href="../class-2/clase2.html">ir a las Tablas</a> </li>
+                <li> <a href="../class-2/clase2.html">ir a las Tablas</a> </li>
+                <li> <a href="../class-2/clase2.html">ir a las Tablas</a> </li>
+            </ul>
+        </nav>
+    </header>
+     <!--contenido principal de la pagina  -->
+     <main> 
+        <!-- section 1 -->
+        <section>
+            <div>
+                <h1>hola</h1>
+                <p>bienvenidos</p>
+                <a href="#">contactame</a>
+            </div>
+           
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz_KyTkx-vU1N0eM1RUNuMfQaE7Tq_wlhSofYlmNBulg&s" alt="">
+           
+        </section> 
+        <!-- section 2 -->
+        <section>
+            <h2>mis servicios</h2>
+            <div><h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, nemo.</h3></div>
+            <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, nemo.</p></div>
+            <div>
+                <a href="#">lorem</a>
+            </div>
+            <article>
+                <h3>hgola</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis, veniam.</p>
+
+
+            </article>
+        </section>
+        <!-- section 3 -->
+        <section>
+            <h2>Contacto</h2>
+            <!-- dentro del form va a haber un input -->
+            <!-- si ponemos un label le asignamos el dato a introducir dentro del input -->
+            <!-- con id le damos al input un identificador  -->
+            <!-- y en label en "for" completamos con el id -->
+            <!-- con darle un identificador al "For" podemos meter texto dentro del formulario -->
+            <!-- con placeholder ponemos un texto de ejemplo dentro del insert, por ejemplo en nombre john doe -->
+            <form>
+                <!-- el form lo podemos pensar como una hoja, va todo dentro de la misma -->
+                <div>
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" placeholder="John doe" required>
+                </div>
+                <div>
+                    <!-- el for siempre tiene que corresponder al id -->
+
+                    <label for="Email">Email</label>
+                    <input type="email" placeholder="email@gmail.com" id="email">
+                    
+                </div>
+                <div>
+                    <!-- con min y max damos un valor maximo y un valor minimo de edad en este caso -->
+                    <label for="edad">Edad;</label>
+                    <input type="number" id="edad" placeholder="18" min="0" max="99">
+              
+                </div>
+                <div>
+                    <!-- tipo password no se ve la contraseña con tipo text si se ve -->
+                    <label for="pass">Contraseña</label>
+                    <input type="password" placeholder="password" id="pass">
+                </div>
+                <div>
+                    <!-- primero el input despues el label para poner la casilla del lado izquierdo y el texto del lado derecho -->
+                    <input type="checkbox" id="terminos">
+                    <label for="terminos">acepto los terminos y condiciones <a href="#">ver terminos</a></label>
+                </div>
+                <div>
+                    <p>Gusto de helado favorito</p>
+                    <!-- como son atributo radio necesitan un name para seleccionar de a uno y no todos juntos -->
+                    <div>
+                        <input type="radio" id="chocolate" name="gustos">
+                        <label for="chocolate">chocolate</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="menta" name="gustos">
+                        <label for="menta">Menta granizada</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="frutilla" name="gustos">
+                        <label for="frutilla">Frutilla</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="menta o no" name="gustos">
+                         <label for="menta o no">menta granizada o no</label>
+                    </div>
+                    <div>
+                        <label for="juego">Jugar</label>
+                        <!-- el value es lo que se va a mandar -->
+                        <select name="juego" id="juego">
+                            <option value="piedra">Piedra</option>
+                            <option value="tijera">Tijera</option>
+                            <option value="papel">Papel</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="mensaje">Mensaje</label>
+                        <br>
+                        <textarea name="mensaje" id="mensaje" cols="30" rows="10" maxlength="50" placeholder="deja tu mensaje"></textarea>
+                    </div>
+                    <div>
+                        <label for="telefono">Telefono</label>
+                        <input type="tel" id="telefono">
+                    </div>
+                </div>
+                <!-- botoncito -->
+                <!-- si tengo la etiqueta button dentro de un formulario, automaticamente va a saber que lo tiene que enviar -->
+                <!-- con tipo submit automaticamente va a tener el texto "enviar"
+                para cambiar de valor, asignamos un value. -->
+                <input type="submit" value="manda el form">
+                <!-- si ponemos un input dentro de un label esta bien, en vez de usar un input -->
+                <!-- <label for="">
+                    <input type="text" name="" id="">
+                </label> -->
+                
+
+            </form>
+        </section>
+        </main>
+        <footer>
+            <p>este es mi footer</p>
+            <ul>
+                <li><a href="#">face</a></li>
+                <li><a href="#">ig</a></li>
+                <li><a href="#">tw</a></li>
+            </ul>
+        </footer>
+</body>
+</html>
