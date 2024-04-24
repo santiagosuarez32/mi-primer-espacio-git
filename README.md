@@ -1,6 +1,6 @@
 # Pasos para subir mi proyecto a GitHub
 
-Hola
+Hola hola
 
 1. git init (unica vez)
 2. trabajamos en el proyecto (agregamos archivos, etc)
